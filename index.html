@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css" /><link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- on inclut jQuery via CDN -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- votre propre fichier dans le dossier de votre projet -->
+    <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <title>Mon Cv Mobile</title>
+</head>
+<style>
+    @media all and (min-width: 1em) {
+        .my-breakpoint.ui-grid-b .ui-block-a { width: 24.925%; }
+        .my-breakpoint.ui-grid-b .ui-block-b { width: 74.925%; }
+        .my-breakpoint.ui-grid-b .ui-block-a { clear: left; }
+
+        .my-breakpoint-2.ui-grid-b .ui-block-a { width: 74.925%; }
+        .my-breakpoint-2.ui-grid-b .ui-block-b { width: 24.925%; }
+        .my-breakpoint-2.ui-grid-b .ui-block-a { clear: left; }
+
+        .ui-grid-b-norm.ui-grid-b .ui-block-a { width: 33%; }
+        .ui-grid-b-norm.ui-grid-b .ui-block-b { width: 33%; }
+        .ui-grid-b-norm.ui-grid-b .ui-block-c { width: 33%; }
+        .ui-grid-b-norm.ui-grid-b .ui-block-a { clear: left; }
+
+        .my-breakpoint-3.ui-grid-b .ui-block-a { width: 39.95%; margin-left: 10%}
+        .my-breakpoint-3.ui-grid-b .ui-block-b { width: 39.950%; margin-right: 10% }
+        .my-breakpoint-3.ui-grid-b .ui-block-a { clear: left; }
+    }
+
+</style>
+<body>
+    <div id="flip" data-role="header" >
+        <h2  > Menu  </h2>
+    </div>
+    <div id="panel">
+        <div data-role="navbar">
+            <div class="ui-grid-b my-breakpoint ui-responsive">
+                <div class="ui-block-a">
+                    <h1>Gaëtan Corso</h1>
+                    <h5>En apprentissage Chez Nablaware</h5>
+                </div>
+                <div class="ui-block-b">
+                    <ul class="margin-top-40px">
+                        <li class="navbar-item"><a href="index.html" class="ui-btn-active">CV</a></li>
+                        <li class="navbar-item">
+                            <div id="drop">Veille</div>
+                            <div id="drop-items">
+                                <br/>
+                                <div class="border-top" > <br/> Notion <br/><br/></div>
+                                <div class="border-top"> <br/> Failles de Sécurité</div>
+                            </div>
+                        </li>
+
+                        <li class="navbar-item"><a href="#">Nablaware</a></li>
+                    </ul>
+                </div>
+            </div><!-- /grid-b -->
+        </div>
+    </div><!-- /navbar -->
+    <br/>
+    <div class="ui-grid-b my-breakpoint-2 ui-responsive">
+        <div class="ui-block-a">
+            <div class="ui-grid-b ui-grid-b-norm ui-responsive">
+                <div class="ui-block-a ">
+                    <div class="ui-header text-align-center">
+                        <i><h4> Me Contacter </h4></i>
+                    </div>
+                    <div id="body-1-a" class="ui-body min-height">
+                        <a  href="" class=" no_border ui-btn  ui-corner-all ui-icon-mail ui-btn-icon-left text-align-left">Mail : gaetancorso@laposte.net</a>
+                        <a  href="" class=" no_border ui-btn  ui-corner-all ui-icon-phone ui-btn-icon-left text-align-left">Tel : 06.52.11.11.69</a>
+
+                    </div>
+                </div>
+                <div class="ui-block-b ">
+                    <div class="ui-header text-align-center">
+                        <i><h4> Ma Localisation </h4></i>
+                    </div>
+                    <div id="body-1-b" class="ui-body min-height ">
+                        <a  href="" class=" no_border ui-btn ui-corner-all ui-icon-location ui-btn-icon-left text-align-left"> Collège Arc de Meyran <br/> 135 rue Henri Moissan, <br/> 13100 Aix en Provence</a>
+                    </div>
+                </div>
+                <div class="ui-block-c ">
+                    <div class="ui-header text-align-center">
+                        <h4>Autre</h4>
+                    </div>
+                    <div id="body-1-c" class="ui-body min-height">
+                        <a  href="" class=" no_border ui-btn ui-corner-all ui-icon-calendar ui-btn-icon-left text-align-left">Né le 11/07/2002 - 18 ans -</a>
+                        <a  href="" class=" no_border ui-btn ui-corner-all ui-icon-tag ui-btn-icon-left text-align-left">Nationalité: Française</a>
+                        <a  href="" class=" no_border ui-btn ui-corner-all ui-icon-info ui-btn-icon-left text-align-left">Signe astrologique : Cancer <br/>Ascendant : Capricorne</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-block-b min-height text-align-center ">
+            <img   class="ui-overlay-shadow margin-top-40px" src="img/cv/gaetan.png" >
+        </div>
+    </div> <!-- FIN PREMIERE PART -->
+    <br/>
+    <br/>
+    <div  class="ui-grid-b my-breakpoint-3 ui-responsive">
+        <div class="ui-block-a ">
+            <div class="ui-header text-align-center">
+                <i><h4> Formations</h4></i>
+            </div>
+            <div  class="ui-body min-height ">
+                <ul>
+                    <li >
+                        <span class="my-badge">2020 :</span> Inscription à l'épreuve pratique du Permis
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Obtention du code de la route.
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Stage de formation intensif informatique (SLAM) au Groupe Ecole Pratique.
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> BAC S (sciences de l’ingénieur) Mention : Assez Bien.
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Inscription en tant que réserviste à l’armée de Terre.
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Terminale S (sciences de l’ingénieur) avec spécialité Informatique Sciences Numérique.
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Brevet des collèges (mention très bien)
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Obtention du B2I
+                    </li><br/>
+                    <li>
+                        <span class="my-badge">2020 :</span> Obtention de l’ASSR2
+                    </li><br/>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-block-b ">
+            <div class="ui-header text-align-center">
+                <i><h4> Compétences </h4></i>
+            </div>
+            <div  class="ui-body min-height ">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
